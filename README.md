@@ -31,13 +31,13 @@ Analysis of the Data Analyst job market's skill requirements, scraped from Linke
 - New platforms
 
 ### Skills for All:
-- COmmunications
-- EN (abroad)
+- Communications
+- English (for abroad roles)
 
 
 ## NEXT STEPS:
-- worldwide
-- new jobs
+- scrape worldwide jobs
+- add new jobs to list
 - career map
 - filter out my current skills
 - predict future skill growth
