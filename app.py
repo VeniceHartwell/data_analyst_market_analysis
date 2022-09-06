@@ -30,7 +30,7 @@ df_ranked = df_filtered.sort_values(by=[f'{df_options}'], ascending=False)
 df_top30 = df_filtered.sort_values(by=[f'{df_options}'], ascending=False).head(30)
 x_val = df_options
 y_val = df_top30.index
-plot = px.bar(df_top30, x=x_val, y=y_val, title=f'Skill Requirements for {df_options}s (by %)', template='simple_white')
+plot = px.bar(df_top30, x=x_val, y=y_val, title=f'Skill Requirements for {df_options}s (by %)', template='plotly')
 # FIX: plot.update_layout(labels={"x_val":f"Job: {df_options}", "y_val":"Skills"})
 st.plotly_chart(plot, use_container_width=True)
 
