@@ -1,16 +1,19 @@
+# Import streamlit and oher necessary libraries for interactive analysis
 import streamlit as st
-st.title('Job Skill Requirements Analysis')
+st.title('Career Skillset Analysis')
 
 import pandas as pd # dataframe mgmt
 import plotly.express as px # libraries for visualization
 import codecs
 import streamlit.components.v1 as components
 
+# LOAD csv for skillset analysis
 @st.cache
 def load_data():
     return pd.read_csv('output/linkedin_skill_requirements_full_2022-09-01.csv')
 
-df = load_data() # import database
+# IMPORT database
+df = load_data()
 
 # OPTION check most popular skills by job
 df_options = st.selectbox('Select a job to analyze:', 
